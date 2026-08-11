@@ -3,691 +3,740 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arfan Ali - Aspiring Designer</title>
-    <meta name="description" content="Arfan Ali is an aspiring designer focused on visual design, UI/UX, and web design. Explore his portfolio, skills, and journey.">
-    <meta name="author" content="Arfan Ali">
+    <title>Md. Arfan Ali — Certificate Peshkar &amp; Law Student</title>
+    <meta name="description" content="Md. Arfan Ali — Certificate Peshkar, Government of Bangladesh, with 9+ years in land administration. LLB candidate specializing in Land Law, statutory compliance, and anti-corruption in land registration.">
+    <meta name="author" content="Md. Arfan Ali">
     <link rel="canonical" href="https://arfan199076-commits.github.io/arfanali.github.io/">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Arfan Ali - Aspiring Designer">
-    <meta property="og:description" content="Arfan Ali is an aspiring designer focused on visual design, UI/UX, and web design. Explore his portfolio, skills, and journey.">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Md. Arfan Ali — Certificate Peshkar & Law Student">
+    <meta property="og:description" content="9+ years in Bangladesh land administration. LLB candidate specializing in Land Law, statutory compliance, and anti-corruption in land registration.">
     <meta property="og:url" content="https://arfan199076-commits.github.io/arfanali.github.io/">
     <meta property="og:image" content="https://arfan199076-commits.github.io/arfanali.github.io/cover.jpg">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Arfan Ali - Aspiring Designer">
-    <meta name="twitter:description" content="Arfan Ali is an aspiring designer focused on visual design, UI/UX, and web design.">
+    <meta name="twitter:title" content="Md. Arfan Ali — Certificate Peshkar & Law Student">
+    <meta name="twitter:description" content="9+ years in Bangladesh land administration. LLB candidate specializing in Land Law and anti-corruption in land registration.">
     <meta name="twitter:image" content="https://arfan199076-commits.github.io/arfanali.github.io/cover.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --ink: #1a1712;
+            --ink-soft: #4a4438;
+            --parchment: #f3efe2;
+            --parchment-deep: #ece5d1;
+            --card: #fbf9f2;
+            --navy: #16294f;
+            --navy-deep: #0e1c38;
+            --brass: #a9823f;
+            --brass-light: #c9a463;
+            --maroon: #7d2230;
+            --line: #d9cfb2;
+            --radius: 3px;
+            --serif: 'Fraunces', Georgia, serif;
+            --sans: 'Source Sans 3', -apple-system, sans-serif;
+            --mono: 'JetBrains Mono', monospace;
         }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #fafafa;
+            font-family: var(--sans);
+            color: var(--ink);
+            background: var(--parchment);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
         }
+
+        img { max-width: 100%; display: block; }
+        a { color: inherit; }
 
         .container {
-            max-width: 1200px;
+            max-width: 1080px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 clamp(1.25rem, 4vw, 2.5rem);
         }
 
-        /* Header */
-        header {
+        body::before {
+            content: "";
             position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            background-image: repeating-linear-gradient(
+                to bottom,
+                transparent 0,
+                transparent 38px,
+                rgba(169, 130, 63, 0.055) 39px
+            );
+        }
+
+        header {
+            position: sticky;
             top: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            transition: all 0.3s ease;
+            z-index: 50;
+            background: rgba(243, 239, 226, 0.92);
+            backdrop-filter: blur(6px);
+            border-bottom: 1px solid var(--line);
         }
 
         nav {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 1rem 0;
+            justify-content: space-between;
+            padding: 1.05rem clamp(1.25rem, 4vw, 2.5rem);
+            max-width: 1080px;
+            margin: 0 auto;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #6366f1;
+        .brand {
+            font-family: var(--serif);
+            font-weight: 600;
+            font-size: 1.15rem;
+            letter-spacing: 0.01em;
+            color: var(--navy);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
         }
+
+        .brand .seal-mini { width: 26px; height: 26px; flex-shrink: 0; }
 
         .nav-links {
             display: flex;
+            gap: clamp(1rem, 2.5vw, 2rem);
             list-style: none;
-            gap: 2rem;
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
         }
 
         .nav-links a {
             text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s ease;
+            color: var(--ink-soft);
+            padding-bottom: 3px;
+            border-bottom: 1px solid transparent;
+            transition: color 0.2s, border-color 0.2s;
         }
 
-        .nav-links a:hover {
-            color: #6366f1;
-        }
+        .nav-links a:hover { color: var(--maroon); border-color: var(--maroon); }
 
-        .mobile-menu {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
+        .nav-toggle { display: none; background: none; border: none; font-size: 1.4rem; color: var(--navy); cursor: pointer; }
 
-        .mobile-menu span {
-            width: 25px;
-            height: 3px;
-            background: #333;
-            margin: 3px 0;
-            transition: 0.3s;
-        }
-
-        /* Hero Section */
         .hero {
-            padding: 120px 0 80px;
+            position: relative;
+            z-index: 1;
+            padding: clamp(3.5rem, 9vw, 6.5rem) 0 clamp(3rem, 7vw, 5rem);
             text-align: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            position: relative;
-            overflow: hidden;
         }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1.5[...]');
+        .eyebrow {
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--brass);
+            margin-bottom: 1.75rem;
         }
 
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
+        .seal { width: 128px; height: 128px; margin: 0 auto 2rem; }
 
         .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            animation: fadeInUp 1s ease;
-        }
-
-        .hero .subtitle {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-            animation: fadeInUp 1s ease 0.2s both;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            animation: fadeInUp 1s ease 0.4s both;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: white;
-            color: #6366f1;
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
+            font-family: var(--serif);
             font-weight: 600;
-            font-size: 1.1rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            animation: fadeInUp 1s ease 0.6s both;
+            font-size: clamp(2.3rem, 6vw, 4rem);
+            letter-spacing: -0.01em;
+            color: var(--navy-deep);
+            line-height: 1.08;
         }
 
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        .hero .role {
+            margin-top: 1.1rem;
+            font-family: var(--serif);
+            font-style: italic;
+            font-weight: 500;
+            font-size: clamp(1.1rem, 2.4vw, 1.4rem);
+            color: var(--maroon);
         }
 
-        /* Sections */
-        section {
-            padding: 80px 0;
+        .hero .tagline {
+            max-width: 620px;
+            margin: 1.6rem auto 0;
+            font-size: 1.05rem;
+            color: var(--ink-soft);
         }
 
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 3rem;
-            color: #1f2937;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.2rem;
-            color: #6b7280;
-            margin-bottom: 4rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* About Section */
-        .about {
-            background: white;
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .about-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        .about-text p {
-            margin-bottom: 1.5rem;
-        }
-
-        .about-image {
-            text-align: center;
-        }
-
-        .profile-placeholder {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+        .hero-cta {
+            margin-top: 2.4rem;
             display: flex;
-            align-items: center;
+            gap: 1rem;
             justify-content: center;
-            margin: 0 auto;
-            color: white;
-            font-size: 4rem;
-            font-weight: bold;
-        }
-
-        /* Skills Section */
-        .skills {
-            background: #f8fafc;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .skill-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: center;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        .skill-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-            color: white;
-            font-size: 1.5rem;
-        }
-
-        .skill-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: #1f2937;
-        }
-
-        .skill-card p {
-            color: #6b7280;
-            line-height: 1.6;
-        }
-
-        /* Portfolio Section */
-        .portfolio {
-            background: white;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .portfolio-item {
-            background: #f8fafc;
-            border-radius: 15px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .portfolio-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .portfolio-image {
-            height: 200px;
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-
-        .portfolio-content {
-            padding: 1.5rem;
-        }
-
-        .portfolio-content h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-            color: #1f2937;
-        }
-
-        .portfolio-content p {
-            color: #6b7280;
-            line-height: 1.6;
-        }
-
-        /* Contact Section */
-        .contact {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .contact-content {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-top: 3rem;
             flex-wrap: wrap;
         }
 
-        .contact-item {
-            text-align: center;
-        }
-
-        .contact-item i {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            opacity: 0.9;
-        }
-
-        .contact-item h4 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-item p {
-            opacity: 0.9;
-        }
-
-        .contact-item a {
-            color: white;
+        .btn {
+            font-family: var(--mono);
+            font-size: 0.78rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
             text-decoration: none;
+            padding: 0.85rem 1.7rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--navy);
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
         }
 
-        .contact-item a:hover {
-            text-decoration: underline;
+        .btn-primary { background: var(--navy); color: var(--parchment); }
+        .btn-primary:hover { background: var(--navy-deep); }
+
+        .btn-outline { background: transparent; color: var(--navy); }
+        .btn-outline:hover { background: var(--navy); color: var(--parchment); }
+
+        section { position: relative; z-index: 1; padding: clamp(3rem, 7vw, 5rem) 0; }
+
+        .section-head { margin-bottom: clamp(2rem, 5vw, 3rem); }
+
+        .section-num {
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            letter-spacing: 0.14em;
+            color: var(--brass);
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 0.6rem;
         }
 
-        /* Footer */
-        footer {
-            background: #1f2937;
-            color: white;
+        .section-title {
+            font-family: var(--serif);
+            font-weight: 600;
+            font-size: clamp(1.7rem, 4vw, 2.4rem);
+            color: var(--navy-deep);
+        }
+
+        .rule-brass {
+            height: 1px;
+            background: linear-gradient(to right, var(--brass), transparent 60%);
+            width: 90px;
+            margin-top: 0.9rem;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: clamp(2rem, 5vw, 4rem);
+            align-items: start;
+        }
+
+        .about-grid p { margin-bottom: 1.1rem; color: var(--ink-soft); }
+        .about-grid strong { color: var(--navy-deep); font-weight: 600; }
+
+        .portrait-frame {
+            border: 1px solid var(--line);
+            padding: 10px;
+            background: var(--card);
+        }
+
+        .portrait-frame img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            object-position: top center;
+            filter: sepia(0.12) contrast(1.02);
+        }
+
+        .portrait-caption {
+            font-family: var(--mono);
+            font-size: 0.68rem;
             text-align: center;
-            padding: 2rem 0;
+            letter-spacing: 0.06em;
+            color: var(--ink-soft);
+            padding-top: 0.7rem;
+            text-transform: uppercase;
         }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .register { border-top: 1px solid var(--line); }
+
+        .entry {
+            display: grid;
+            grid-template-columns: 90px 1fr auto;
+            gap: 1.5rem;
+            align-items: baseline;
+            padding: 1.9rem 0;
+            border-bottom: 1px solid var(--line);
+            position: relative;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
+        .entry-ref {
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            color: var(--brass);
+            letter-spacing: 0.05em;
+        }
+
+        .entry-body h3 {
+            font-family: var(--serif);
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--navy-deep);
+            margin-bottom: 0.25rem;
+        }
+
+        .entry-body .org {
+            font-style: italic;
+            color: var(--ink-soft);
+            font-size: 0.95rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .entry-body ul { list-style: none; padding: 0; }
+
+        .entry-body li {
+            position: relative;
+            padding-left: 1.1rem;
+            margin-bottom: 0.45rem;
+            font-size: 0.95rem;
+            color: var(--ink-soft);
+        }
+
+        .entry-body li::before { content: "—"; position: absolute; left: 0; color: var(--brass); }
+
+        .entry-date {
+            font-family: var(--mono);
+            font-size: 0.75rem;
+            color: var(--navy);
+            text-align: right;
+            white-space: nowrap;
+            padding: 0.3rem 0.7rem;
+            border: 1px solid var(--line);
+            background: var(--card);
+        }
+
+        .entry.current .entry-date { border-color: var(--maroon); color: var(--maroon); }
+
+        .interest-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5px;
+            background: var(--line);
+            border: 1px solid var(--line);
+        }
+
+        .interest-card { background: var(--card); padding: 2rem 1.8rem; }
+        .interest-card .icon { font-size: 1.4rem; color: var(--maroon); margin-bottom: 1rem; }
+
+        .interest-card h3 {
+            font-family: var(--serif);
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--navy-deep);
+            margin-bottom: 0.6rem;
+        }
+
+        .interest-card p { font-size: 0.92rem; color: var(--ink-soft); }
+
+        .skills-wrap { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+
+        .skill-pill {
+            font-family: var(--mono);
+            font-size: 0.78rem;
+            padding: 0.6rem 1.1rem;
+            border: 1px solid var(--line);
+            background: var(--card);
+            color: var(--ink-soft);
+            border-radius: var(--radius);
+        }
+
+        .lang-row { margin-top: 2.5rem; display: flex; gap: 3rem; flex-wrap: wrap; }
+
+        .lang-item .label {
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--brass);
+            margin-bottom: 0.4rem;
+        }
+
+        .lang-item .value { font-family: var(--serif); font-size: 1.05rem; color: var(--navy-deep); }
+
+        .contact-section { background: var(--navy-deep); color: var(--parchment); }
+        .contact-section .section-title { color: var(--parchment); }
+
+        .contact-section .eyebrow-alt {
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            letter-spacing: 0.14em;
+            color: var(--brass-light);
+            text-transform: uppercase;
+        }
+
+        .contact-section .section-title-wrap p { margin-top: 1rem; color: #c9c2ab; max-width: 520px; }
+
+        .contact-grid {
+            margin-top: 2.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+            gap: 1px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .contact-item {
+            background: var(--navy-deep);
+            padding: 1.6rem 1.4rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .contact-item:hover { background: #1c2e54; }
+        .contact-item i { font-size: 1.3rem; width: 24px; text-align: center; flex-shrink: 0; }
+
+        .contact-item .c-label {
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #8f8a72;
+            margin-bottom: 0.15rem;
+        }
+
+        .contact-item .c-value { font-size: 0.88rem; color: var(--parchment); }
+
+        .cv-cta { margin-top: 2.5rem; text-align: center; }
+
+        .cv-cta .btn-primary {
+            border-color: var(--brass-light);
+            background: var(--brass);
+            color: var(--navy-deep);
+            font-weight: 600;
+        }
+
+        .cv-cta .btn-primary:hover { background: var(--brass-light); }
+
+        footer {
+            background: var(--navy-deep);
+            color: #8f8a72;
+            text-align: center;
+            padding: 1.6rem 0 2.2rem;
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            letter-spacing: 0.04em;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in { opacity: 1; transform: none; transition: none; }
+            html { scroll-behavior: auto; }
+        }
+
+        @media (max-width: 780px) {
             .nav-links {
+                position: fixed;
+                top: 68px;
+                left: 0;
+                right: 0;
+                background: var(--parchment);
+                flex-direction: column;
+                padding: 1.5rem clamp(1.25rem, 4vw, 2.5rem);
+                border-bottom: 1px solid var(--line);
+                gap: 1.1rem;
                 display: none;
             }
-
-            .mobile-menu {
-                display: flex;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero .subtitle {
-                font-size: 1.2rem;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-info {
-                flex-direction: column;
-                gap: 2rem;
-            }
-
-            .profile-placeholder {
-                width: 250px;
-                height: 250px;
-                font-size: 3rem;
-            }
+            .nav-links.open { display: flex; }
+            .nav-toggle { display: block; }
+            .about-grid { grid-template-columns: 1fr; }
+            .portrait-frame { max-width: 260px; margin: 0 auto; }
+            .entry { grid-template-columns: 1fr; gap: 0.5rem; }
+            .entry-date { text-align: left; display: inline-block; }
         }
 
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Section visibility animation */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        :focus-visible { outline: 2px solid var(--maroon); outline-offset: 2px; }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
+
     <header>
-        <nav class="container">
-            <div class="logo">Arfan Ali</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+        <nav>
+            <a href="#" class="brand">
+                <svg class="seal-mini" viewBox="0 0 100 100" aria-hidden="true">
+                    <circle cx="50" cy="50" r="46" fill="none" stroke="#a9823f" stroke-width="3"/>
+                    <circle cx="50" cy="50" r="36" fill="none" stroke="#a9823f" stroke-width="1.2"/>
+                    <text x="50" y="58" text-anchor="middle" font-family="Fraunces, serif" font-size="30" fill="#16294f" font-weight="600">M</text>
+                </svg>
+                Md. Arfan Ali
+            </a>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#interests">Legal Focus</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>Arfan Ali</h1>
-                <div class="subtitle">Aspiring Designer</div>
-                <p>Passionate about creating beautiful and functional designs that make a difference. Currently on a journey to master the art of design and bring creative visions to life.</p>
-                <a href="#portfolio" class="cta-button">View My Work</a>
+            <div class="eyebrow">Government of the People's Republic of Bangladesh</div>
+            <svg class="seal" viewBox="0 0 200 200" role="img" aria-label="Personal seal">
+                <circle cx="100" cy="100" r="94" fill="none" stroke="#a9823f" stroke-width="2"/>
+                <circle cx="100" cy="100" r="82" fill="none" stroke="#a9823f" stroke-width="1"/>
+                <path id="ringPath" d="M 100,18 A 82,82 0 1 1 99.9,18" fill="none"/>
+                <text font-family="JetBrains Mono, monospace" font-size="9.2" letter-spacing="2.5" fill="#7d2230">
+                    <textPath href="#ringPath" startOffset="2%">MANIKGANJ · LAND ADMINISTRATION · EST. 2017 ·</textPath>
+                </text>
+                <circle cx="100" cy="100" r="52" fill="none" stroke="#16294f" stroke-width="1.5"/>
+                <text x="100" y="94" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="34" fill="#16294f">MA</text>
+                <text x="100" y="118" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.5" fill="#a9823f">PESHKAR</text>
+            </svg>
+            <h1>Md. Arfan Ali</h1>
+            <div class="role">Certificate Peshkar &middot; LLB Candidate</div>
+            <p class="tagline">Nine years of grassroots land administration in Manikganj, now paired with formal legal study &mdash; working toward a more transparent, error-free land record system for Bangladesh.</p>
+            <div class="hero-cta">
+                <a href="Arfan_Ali_Law_CV.pdf" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+                <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Get in touch</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about">
         <div class="container">
-            <h2 class="section-title fade-in">About Me</h2>
-            <div class="about-content">
-                <div class="about-text fade-in">
-                    <p>Hello! I'm Md. Arfan Ali. By profession I serve as a <strong>Certificate Peshkar</strong> with the Government of Bangladesh in Manikganj District, with over 9 years of hands-on experience in grassroots-level government administration and land record management.</p>
-                    <p>Driven by a deep passion for justice and legal reform, I am currently pursuing a <strong>Bachelor of Laws (LLB)</strong> at Khondokar Nurul Hossain Law Academy. My legal interests focus on <strong>Land Law and anti-corruption in land administration</strong> &mdash; including statutory compliance under the State Acquisition and Tenancy Act and the Transfer of Property Act, Land Survey Tribunal procedures, and registry &amp; mutation (Khatian) analysis.</p>
-                    <p>Alongside my legal studies, I'm also exploring design &mdash; learning digital interfaces and visual communication as a creative outlet. My goal is to combine structured legal thinking with thoughtful design to contribute to a more transparent, error-free land management and legal system in Bangladesh.</p>
-                </div>
-                <div class="about-image fade-in">
-                    <div class="profile-placeholder">AA</div>
-                </div>
+            <div class="section-head fade-in">
+                <span class="section-num">01 &nbsp;/&nbsp; Profile</span>
+                <h2 class="section-title">About</h2>
+                <div class="rule-brass"></div>
             </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title fade-in">Skills & Interests</h2>
-            <p class="section-subtitle fade-in">Areas I'm passionate about and actively developing</p>
-            
-            <div class="skills-grid">
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">🎨</div>
-                    <h3>Visual Design</h3>
-                    <p>Learning color theory, typography, and composition to create visually appealing designs that communicate effectively.</p>
+            <div class="about-grid">
+                <div class="about-copy fade-in">
+                    <p>I currently serve as a <strong>Certificate Peshkar</strong> with the Government of Bangladesh in Manikganj District &mdash; a role built on preparing, verifying, and safeguarding official certificates and public land records with precision and accountability.</p>
+                    <p>Over more than nine years in grassroots-level government administration, I've seen first-hand where the land record system serves people well, and where it doesn't. That experience is what led me back to the classroom: I'm now pursuing a <strong>Bachelor of Laws (LLB)</strong> at Khondokar Nurul Hossain Law Academy, focused on Land Law, statutory compliance, and reducing corruption in land registration.</p>
+                    <p>My work sits at the intersection of two things I take seriously &mdash; disciplined public administration and a belief that legal reform, backed by real field experience, can make land governance in Bangladesh fairer and more transparent.</p>
                 </div>
-                
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">💻</div>
-                    <h3>UI/UX Design</h3>
-                    <p>Exploring user interface design and user experience principles to create intuitive and user-friendly digital experiences.</p>
-                </div>
-                
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">🖼️</div>
-                    <h3>Graphic Design</h3>
-                    <p>Developing skills in creating logos, branding materials, and print designs using industry-standard tools and techniques.</p>
-                </div>
-                
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">🌐</div>
-                    <h3>Web Design</h3>
-                    <p>Learning to design and develop responsive websites that look great on all devices and provide excellent user experiences.</p>
-                </div>
-
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">⚖️</div>
-                    <h3>Legal Studies &amp; Land Law</h3>
-                    <p>Pursuing an LLB with a focus on Land Law, statutory compliance, and anti-corruption in land registration &mdash; combining academic legal research with 9+ years of practical government land-administration experience.</p>
+                <div class="portrait-frame fade-in">
+                    <img src="cover.jpg" alt="Portrait of Md. Arfan Ali">
+                    <div class="portrait-caption">Manikganj, Dhaka, Bangladesh</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+    <section id="experience">
         <div class="container">
-            <h2 class="section-title fade-in">My Journey</h2>
-            <p class="section-subtitle fade-in">Projects and experiments as I learn and grow</p>
-            
-            <div class="portfolio-grid">
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-image">Practice Project #1</div>
-                    <div class="portfolio-content">
-                        <h3>Design Exploration</h3>
-                        <p>Early experiments with color, typography, and layout. Learning the fundamentals of good design through practice and iteration.</p>
+            <div class="section-head fade-in">
+                <span class="section-num">02 &nbsp;/&nbsp; Record of Service</span>
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="rule-brass"></div>
+            </div>
+            <div class="register fade-in">
+                <div class="entry current">
+                    <div class="entry-ref">REC.<br>NO. 01</div>
+                    <div class="entry-body">
+                        <h3>Certificate Peshkar</h3>
+                        <div class="org">Government of the People's Republic of Bangladesh &mdash; Manikganj District, Dhaka</div>
+                        <ul>
+                            <li>Execute vital secretarial and clerical duties, including preparation, verification, and systematic management of official certificates and public land records.</li>
+                            <li>Provide administrative and logistical support to senior officials, ensuring timely execution of statutory directives within an execution-focused framework.</li>
+                            <li>Maintain chronological, high-security filing systems for classified government documentation and sensitive departmental correspondence.</li>
+                            <li>Address public queries on land records bilingually, bridging communication gaps in Bangla and English.</li>
+                        </ul>
                     </div>
-                </div>
-                
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-image">Learning Project #2</div>
-                    <div class="portfolio-content">
-                        <h3>UI Study</h3>
-                        <p>Recreating popular interfaces to understand design patterns and user experience principles. Building muscle memory for good design.</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item fade-in">
-                    <div class="portfolio-image">Creative Work #3</div>
-                    <div class="portfolio-content">
-                        <h3>Personal Branding</h3>
-                        <p>Developing my own visual identity and brand. Experimenting with different styles to find my unique design voice.</p>
-                    </div>
+                    <div class="entry-date">MAY 2017 &mdash; PRESENT</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="education">
         <div class="container">
-            <div class="contact-content">
+            <div class="section-head fade-in">
+                <span class="section-num">03 &nbsp;/&nbsp; Academic Record</span>
+                <h2 class="section-title">Education</h2>
+                <div class="rule-brass"></div>
+            </div>
+            <div class="register fade-in">
+                <div class="entry current">
+                    <div class="entry-ref">REC.<br>NO. 01</div>
+                    <div class="entry-body">
+                        <h3>Bachelor of Laws (LLB) &mdash; Part 1</h3>
+                        <div class="org">Khondokar Nurul Hossain Law Academy &middot; Major: Law</div>
+                    </div>
+                    <div class="entry-date">CLASS OF 2025</div>
+                </div>
+                <div class="entry">
+                    <div class="entry-ref">REC.<br>NO. 02</div>
+                    <div class="entry-body">
+                        <h3>Bachelor of Business Administration (BBA)</h3>
+                        <div class="org">Abu Jar Gifari College, Dhaka &middot; Major: Management</div>
+                    </div>
+                    <div class="entry-date">2009 &mdash; 2013</div>
+                </div>
+                <div class="entry">
+                    <div class="entry-ref">REC.<br>NO. 03</div>
+                    <div class="entry-body">
+                        <h3>Higher Secondary Certificate (HSC)</h3>
+                        <div class="org">Govt. Ghior College &middot; Major: Business Studies</div>
+                    </div>
+                    <div class="entry-date">2006 &mdash; 2008</div>
+                </div>
+                <div class="entry">
+                    <div class="entry-ref">REC.<br>NO. 04</div>
+                    <div class="entry-body">
+                        <h3>Secondary School Certificate (SSC)</h3>
+                        <div class="org">Ghior D.N. Pilot High School &middot; Major: Business Studies</div>
+                    </div>
+                    <div class="entry-date">2004 &mdash; 2006</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interests">
+        <div class="container">
+            <div class="section-head fade-in">
+                <span class="section-num">04 &nbsp;/&nbsp; Research Focus</span>
+                <h2 class="section-title">Legal Research Interests</h2>
+                <div class="rule-brass"></div>
+            </div>
+            <div class="interest-grid fade-in">
+                <div class="interest-card">
+                    <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3>Land Law &amp; Anti-Corruption</h3>
+                    <p>Developing frameworks to enhance transparency in land registration and minimize corruption within the land administration system.</p>
+                </div>
+                <div class="interest-card">
+                    <div class="icon"><i class="fa-solid fa-gavel"></i></div>
+                    <h3>Statutory Compliance</h3>
+                    <p>Academic study of the State Acquisition and Tenancy Act, Land Survey Tribunal procedures, and the Transfer of Property Act.</p>
+                </div>
+                <div class="interest-card">
+                    <div class="icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                    <h3>Registry &amp; Mutation Analysis</h3>
+                    <p>Analyzing mutation processes, surveying mechanisms, and Khatian (land record) integrity by combining field insight with legal theory.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="section-head fade-in">
+                <span class="section-num">05 &nbsp;/&nbsp; Capabilities</span>
+                <h2 class="section-title">Skills &amp; Languages</h2>
+                <div class="rule-brass"></div>
+            </div>
+            <div class="skills-wrap fade-in">
+                <span class="skill-pill">Administrative Execution</span>
+                <span class="skill-pill">Government Documentation</span>
+                <span class="skill-pill">Public Record Management</span>
+                <span class="skill-pill">Land Surveying &amp; Mapping</span>
+                <span class="skill-pill">Legal Drafting Basics</span>
+                <span class="skill-pill">Legal Research &amp; Analysis of Land Statutes</span>
+                <span class="skill-pill">Official Correspondence</span>
+                <span class="skill-pill">Microsoft Office Suite</span>
+                <span class="skill-pill">Bilingual Correspondence (Bangla &amp; English)</span>
+            </div>
+            <div class="lang-row fade-in">
+                <div class="lang-item">
+                    <div class="label">Bangla</div>
+                    <div class="value">Native / Bilingual Proficiency</div>
+                </div>
+                <div class="lang-item">
+                    <div class="label">English</div>
+                    <div class="value">Professional Working Proficiency</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-head section-title-wrap fade-in">
+                <span class="eyebrow-alt">06 &nbsp;/&nbsp; Correspondence</span>
                 <h2 class="section-title">Let's Connect</h2>
-                <p class="section-subtitle">I'm always excited to connect with fellow designers, potential mentors, and anyone interested in design</p>
-                
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fa-solid fa-envelope" style="color:#EA4335;"></i></div>
-                        <h4>Email</h4>
-                        <p><a href="mailto:arfan199076@gmail.com">arfan199076@gmail.com</a></p>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fa-brands fa-linkedin" style="color:#0A66C2;"></i></div>
-                        <h4>LinkedIn</h4>
-                        <p><a href="https://www.linkedin.com/in/md-arfan-222a73222/" target="_blank" rel="noopener">linkedin.com/in/md-arfan</a></p>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fa-brands fa-github" style="color:#181717;"></i></div>
-                        <h4>GitHub</h4>
-                        <p><a href="https://github.com/arfan199076-commits" target="_blank" rel="noopener">github.com/arfan199076-commits</a></p>
-                    </div>
+                <p>Open to conversations on land law, public administration, and legal reform &mdash; or simply to connect.</p>
+            </div>
 
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fa-brands fa-whatsapp" style="color:#25D366;"></i></div>
-                        <h4>WhatsApp</h4>
-                        <p><a href="https://wa.me/8801790889616" target="_blank" rel="noopener">+880 1790-889616</a></p>
-                    </div>
+            <div class="contact-grid fade-in">
+                <a class="contact-item" href="mailto:arfan199076@gmail.com">
+                    <i class="fa-solid fa-envelope" style="color:#e8734a;"></i>
+                    <div><div class="c-label">Email</div><div class="c-value">arfan199076@gmail.com</div></div>
+                </a>
+                <a class="contact-item" href="tel:+8801790889616">
+                    <i class="fa-solid fa-phone" style="color:#c9a463;"></i>
+                    <div><div class="c-label">Phone</div><div class="c-value">01790-889616</div></div>
+                </a>
+                <a class="contact-item" href="https://www.linkedin.com/in/md-arfan-222a73222/" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-linkedin" style="color:#5b9bd5;"></i>
+                    <div><div class="c-label">LinkedIn</div><div class="c-value">md-arfan</div></div>
+                </a>
+                <a class="contact-item" href="https://github.com/arfan199076-commits" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github" style="color:#d8cfb2;"></i>
+                    <div><div class="c-label">GitHub</div><div class="c-value">arfan199076-commits</div></div>
+                </a>
+                <a class="contact-item" href="https://wa.me/8801790889616" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-whatsapp" style="color:#4fce6e;"></i>
+                    <div><div class="c-label">WhatsApp</div><div class="c-value">+880 1790-889616</div></div>
+                </a>
+                <a class="contact-item" href="https://x.com/md_ali39231" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-x-twitter" style="color:#e8e4d6;"></i>
+                    <div><div class="c-label">X</div><div class="c-value">@md_ali39231</div></div>
+                </a>
+                <a class="contact-item" href="https://www.facebook.com/share/17HNhhZ1mM/" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-facebook" style="color:#5b9bd5;"></i>
+                    <div><div class="c-label">Facebook</div><div class="c-value">Profile</div></div>
+                </a>
+                <a class="contact-item" href="https://www.instagram.com/arfanali2013" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-instagram" style="color:#e08aa0;"></i>
+                    <div><div class="c-label">Instagram</div><div class="c-value">@arfanali2013</div></div>
+                </a>
+            </div>
 
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fa-brands fa-x-twitter" style="color:#000000;"></i></div>
-                        <h4>X (Twitter)</h4>
-                        <p><a href="https://x.com/md_ali39231" target="_blank" rel="noopener">@md_ali39231</a></p>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fa-brands fa-facebook" style="color:#1877F2;"></i></div>
-                        <h4>Facebook</h4>
-                        <p><a href="https://www.facebook.com/share/17HNhhZ1mM/" target="_blank" rel="noopener">Facebook Profile</a></p>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon"><i class="fa-brands fa-instagram" style="color:#E4405F;"></i></div>
-                        <h4>Instagram</h4>
-                        <p><a href="https://www.instagram.com/arfanali2013" target="_blank" rel="noopener">@arfanali2013</a></p>
-                    </div>
-                </div>
-
-                <div class="cv-download fade-in" style="margin-top: 2.5rem;">
-                    <a href="Arfan_Ali_Law_CV.pdf" target="_blank" rel="noopener" style="display:inline-block;padding:12px 28px;background:var(--fill-primary, #2563eb);color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">📄 Download My CV</a>
-                </div>
+            <div class="cv-cta fade-in">
+                <a href="Arfan_Ali_Law_CV.pdf" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-solid fa-file-arrow-down"></i> Download Full CV (PDF)</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Arfan Ali. Designed with passion and built with code.</p>
-        </div>
+        &copy; 2026 MD. ARFAN ALI &middot; MANIKGANJ, DHAKA, BANGLADESH
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+        navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.12 });
 
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Header background opacity on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            const scrolled = window.pageYOffset;
-            const opacity = Math.min(scrolled / 100, 1);
-            header.style.background = `rgba(255, 255, 255, ${0.95 + (0.05 * opacity)})`;
-        });
-
-        // Mobile menu toggle (basic implementation)
-        const mobileMenu = document.querySelector('.mobile-menu');
-        const navLinks = document.querySelector('.nav-links');
-
-        mobileMenu.addEventListener('click', () => {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-        });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
