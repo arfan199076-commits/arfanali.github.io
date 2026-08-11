@@ -206,6 +206,41 @@
 
         section { position: relative; z-index: 1; padding: clamp(3rem, 7vw, 5rem) 0; }
 
+        .quote-strip {
+            position: relative;
+            z-index: 1;
+            padding: 0 0 clamp(2.5rem, 6vw, 4rem);
+            text-align: center;
+        }
+
+        .quote-box {
+            max-width: 640px;
+            margin: 0 auto;
+            border-top: 1px solid var(--brass);
+            border-bottom: 1px solid var(--brass);
+            padding: 1.8rem 1rem;
+        }
+
+        .quote-box p {
+            font-family: var(--serif);
+            font-style: italic;
+            font-weight: 500;
+            font-size: clamp(1.1rem, 2.6vw, 1.45rem);
+            color: var(--navy-deep);
+            line-height: 1.5;
+        }
+
+        .quote-box cite {
+            display: block;
+            margin-top: 0.9rem;
+            font-family: var(--mono);
+            font-style: normal;
+            font-size: 0.72rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--maroon);
+        }
+
         .section-head { margin-bottom: clamp(2rem, 5vw, 3rem); }
 
         .section-num {
@@ -479,7 +514,13 @@
                 <svg class="seal-mini" viewBox="0 0 100 100" aria-hidden="true">
                     <circle cx="50" cy="50" r="46" fill="none" stroke="#a9823f" stroke-width="3"/>
                     <circle cx="50" cy="50" r="36" fill="none" stroke="#a9823f" stroke-width="1.2"/>
-                    <text x="50" y="58" text-anchor="middle" font-family="Fraunces, serif" font-size="30" fill="#16294f" font-weight="600">M</text>
+                    <g stroke="#16294f" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="50" y1="30" x2="50" y2="66"/>
+                        <line x1="30" y1="38" x2="70" y2="38"/>
+                        <path d="M30,38 L22,54 a8,8 0 0 0 16,0 Z"/>
+                        <path d="M70,38 L62,54 a8,8 0 0 0 16,0 Z"/>
+                        <line x1="40" y1="70" x2="60" y2="70"/>
+                    </g>
                 </svg>
                 Md. Arfan Ali
             </a>
@@ -506,8 +547,15 @@
                     <textPath href="#ringPath" startOffset="2%">MANIKGANJ · LAND ADMINISTRATION · EST. 2017 ·</textPath>
                 </text>
                 <circle cx="100" cy="100" r="52" fill="none" stroke="#16294f" stroke-width="1.5"/>
-                <text x="100" y="94" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="34" fill="#16294f">MA</text>
-                <text x="100" y="118" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.5" fill="#a9823f">PESHKAR</text>
+                <g stroke="#16294f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="100" y1="66" x2="100" y2="120"/>
+                    <line x1="72" y1="78" x2="128" y2="78"/>
+                    <path d="M72,78 L60,102 a12,12 0 0 0 24,0 Z"/>
+                    <path d="M128,78 L116,102 a12,12 0 0 0 24,0 Z"/>
+                    <line x1="82" y1="128" x2="118" y2="128"/>
+                </g>
+                <path d="M84,138 q16,-8 32,0" stroke="#a9823f" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <text x="100" y="152" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="1.5" fill="#a9823f">PESHKAR</text>
             </svg>
             <h1>Md. Arfan Ali</h1>
             <div class="role">Certificate Peshkar &middot; LLB Candidate</div>
@@ -518,6 +566,15 @@
             </div>
         </div>
     </section>
+
+    <div class="quote-strip">
+        <div class="container">
+            <blockquote class="quote-box fade-in">
+                <p>&ldquo;Education is the most powerful weapon which you can use to change the world.&rdquo;</p>
+                <cite>&mdash; Nelson Mandela</cite>
+            </blockquote>
+        </div>
+    </div>
 
     <section id="about">
         <div class="container">
@@ -533,7 +590,7 @@
                     <p>My work sits at the intersection of two things I take seriously &mdash; disciplined public administration and a belief that legal reform, backed by real field experience, can make land governance in Bangladesh fairer and more transparent.</p>
                 </div>
                 <div class="portrait-frame fade-in">
-                    <img src="cover.jpg" alt="Portrait of Md. Arfan Ali">
+                    <img src="portrait.jpg" alt="Portrait of Md. Arfan Ali">
                     <div class="portrait-caption">Manikganj, Dhaka, Bangladesh</div>
                 </div>
             </div>
